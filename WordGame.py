@@ -13,10 +13,7 @@ class WordGame:
         else:
             return False
         
-    '''def verifyLetter(self,a):
-        if a in gameWord:
-            self.encryptedWord=self.encryptedWord(a)
-            return(encryptedWord)'''
+   
     def verifyLetter(self,a,encryptedWord):
         
         gW=self.gameWord
@@ -71,9 +68,7 @@ class WordGame:
             print("try again ",self.l,"chances remaining")
         else:
             print("correct!try again,", self.l,"chance remaining")
-        '''for i in (self.verifyLetter(a)):
-            if (i!="_"):
-                count=count-1'''
+       
         
         while(self.l!=0):
                
@@ -93,7 +88,7 @@ class WordGame:
                     print("try again ",self.l,"chances remaining")
                    
                 else:
-                    #NewWord=self.verifyLetter(chance,newEncryptedWords)
+                   
                     if(self.verifyWord(self.verifyLetter(chance,newEncryptedWords))):
                         print("Congrats!! you guessed it right\n GAME OVER")
                         break
